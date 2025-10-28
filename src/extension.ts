@@ -94,7 +94,6 @@ function showWelcomeImage(context: vscode.ExtensionContext) {
             </div>
             <script>
                 function closePanel() {
-                    // Панель закроется при dispose()
                 }
             </script>
         </body>
