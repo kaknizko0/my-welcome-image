@@ -1,0 +1,63 @@
+{
+    "name": "my-welcome-image",
+    "displayName": "Welcome Image Display",
+    "description": "Shows a custom welcome image when you open a project in VS Code",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "welcome",
+        "image",
+        "onboarding",
+        "project"
+    ],
+    "author": {
+        "name": "ur",
+        "email": "radikultseva.vika@bk.ru"
+    },
+    "publisher": "kaknizko0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kaknizko0/my-welcome-image"
+    },
+    "homepage": "https://github.com/kaknizko0/my-welcome-image#readme",
+    "bugs": {
+        "url": "https://github.com/kaknizko0/my-welcome-image/issues"
+    },
+    "license": "MIT",
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#1e1e1e",
+        "theme": "dark"
+    },
+
+    "activationEvents": [
+        "workspaceContains:**/*"
+    ],
+    
+    "main": "./out/extension.js",
+    
+    "contributes": {
+        "commands": [
+            {
+                "command": "my-welcome-image.showWelcome",
+                "title": "Show Welcome Image"
+            }
+        ]
+    },
+    
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.60.0",
+        "@types/node": "^18.0.0",
+        "typescript": "^5.1.6"
+    }
+}
