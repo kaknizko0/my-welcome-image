@@ -33,6 +33,3 @@ You can also manually trigger it via:
 
 VS Code version 1.60.0 or higher
 
-## Extension Settings
-
-*TODO: Describe settings*
